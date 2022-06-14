@@ -15,7 +15,7 @@ class Header extends Component
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" role="">
                         <Nav className="me-auto">
-                            <NavDropdown title="About" id="basic-nav-dropdown" menuVariant="dark">
+                            <NavDropdown title="About" id="basic-nav-dropdown" menuVariant="dark" className="navbar-dropdown">
                                 <NavDropdown.Item href="#work">Work</NavDropdown.Item>
                                 <NavDropdown.Item href="#education">Education</NavDropdown.Item>
                                 <NavDropdown.Item href="#project">Project</NavDropdown.Item>
@@ -30,7 +30,6 @@ class Header extends Component
                             <Nav.Link href="#memes">Dank memes</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 </Container>
             </Navbar>
         </div>;
