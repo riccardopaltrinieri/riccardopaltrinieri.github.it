@@ -1,5 +1,5 @@
 import {Component} from "react";
-import {Col, Container, Row} from "react-bootstrap";
+import {Button, Col, Container, Row} from "react-bootstrap";
 import {Document, Page} from 'react-pdf/dist/esm/entry.webpack5';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import './index.css';
@@ -12,7 +12,7 @@ class Resume extends Component {
     render() {
         return (
             <Container className="pt-3 container_resume">
-                <Row>
+                <Row className="align-items-center">
                     <Col>
                         <Document
                             file="/pdf/cv_riccardo_paltrinieri.pdf"
@@ -21,6 +21,19 @@ class Resume extends Component {
                         >
                             <Page pageNumber={1}/>
                         </Document>
+                    </Col>
+                    <Col className="text-center text-white resume-quote">
+                        <Row className="fst-italic">
+                            <h3> "One of the best developer I've ever met"</h3>
+                            <h5>~ Tony Stark</h5>
+                        </Row>
+                        <Row className="fst-italic py-5">
+                            <h3> "Brilliant, skilled and fun"</h3>
+                            <h5>~ Rick Sanchez</h5>
+                        </Row>
+                        <Row className="mt-5">
+                            <a href={"/pdf/cv_riccardo_paltrinieri.pdf"}><Button variant="outline-light">Download</Button></a>
+                        </Row>
                     </Col>
                 </Row>
             </Container>

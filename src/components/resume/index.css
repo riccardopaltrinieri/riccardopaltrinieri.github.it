@@ -5,9 +5,11 @@
 
 .react-pdf__Page {
     min-width : 100%;
-    max-width : 800px;
+    max-width : 1000px;
 }
 
-.react-pdf__Page__canvas {
-    width: available !important;
+@media screen and (max-width: 991px) {
+    .resume-quote {
+        margin-top: 50px;
+    }
 }
