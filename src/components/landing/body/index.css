@@ -1,5 +1,20 @@
+.intro-picture {
+    width: 300px;
+}
+
+.carousel-item {
+    position: unset !important;
+}
+
+.carousel-caption {
+    position: inherit !important;
+}
+
 @media screen and (max-width: 431px) {
     .intro-text {
         text-align: center !important;
+    }
+    .intro-picture {
+        max-width: 200px;
     }
 }

@@ -1,7 +1,8 @@
 import {Component} from "react";
 import {Col, Container, Image, Row} from "react-bootstrap";
-import intro_picture from "images/black_background.png";
+import intro_picture from "images/avatar_intro.jpg";
 import './index.css';
+import work_list_picture from "../../../images/company_logos.png";
 
 /**
  * @author Riccardo Paltrinieri <riccardo@paltrinieri>
@@ -10,7 +11,7 @@ import './index.css';
 class Intro extends Component {
     render() {
         return <div
-            className="intro-wrapper pt-5 justify-content-center"
+            className="intro-wrapper mt-5 justify-content-center"
             style = {{
                 display: 'flex',
                 alignItems: 'center',
@@ -20,6 +21,9 @@ class Intro extends Component {
         >
             <Container className="container-xl intro">
                 <Row className="align-items-center">
+                    <Col className="align-items-end p-4">
+                        <Image src={intro_picture} alt="Intro picture" className="intro-picture"/>
+                    </Col>
                     <Col className="text-start p-5 intro-text">
                         <h1 style={{ color: "white" }}><b>Riccardo Paltrinieri</b></h1>
                         <p style={{ color: "white" }}><i>
@@ -27,9 +31,9 @@ class Intro extends Component {
                             from the backend to the frontend.
                         </i></p>
                     </Col>
-                    <Col className="intro-picture align-items-end p-4">
-                        <Image src={intro_picture} alt="Intro picture"/>
-                    </Col>
+                </Row>
+                <Row>
+                    <Image src={work_list_picture} alt="Company logos"/>
                 </Row>
             </Container>
         </div>;
