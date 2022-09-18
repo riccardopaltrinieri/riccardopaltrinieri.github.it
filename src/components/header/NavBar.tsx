@@ -1,5 +1,6 @@
 import {Component} from "react";
 import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 /**
  * @author Riccardo Paltrinieri <riccardo@paltrinieri>
@@ -15,14 +16,14 @@ class NavBar extends Component<NavBarProps> {
                     <Navbar.Collapse id="basic-navbar-nav" role="tablist">
                         <Nav className="me-auto">
                             <NavDropdown title="About" id="basic-nav-dropdown" menuVariant="dark" className="navbar-dropdown">
-                                <NavDropdown.Item href="education">Education</NavDropdown.Item>
-                                <NavDropdown.Item href="project">Project</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/education">Education</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/project">Project</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#something-about-me">Something about me</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/#something-about-me">Something about me</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="work">Work</Nav.Link>
-                            <Nav.Link href="resume">Resume</Nav.Link>
-                            <Nav.Link href="contact">Contact</Nav.Link>
+                            <Nav.Link as={Link} to="/work">Work</Nav.Link>
+                            <Nav.Link as={Link} to="/resume">Resume</Nav.Link>
+                            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
