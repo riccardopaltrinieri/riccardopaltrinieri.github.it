@@ -1,5 +1,5 @@
 import 'App.css';
-import { Header } from 'common';
+import { NavBar } from 'components/header';
 import { Body } from 'components/landing/body';
 import {useState} from "react";
 
@@ -12,7 +12,7 @@ export default function App() {
 
     return (
         <div className="App">
-            <Header handleResumeClick={handleResumeClick}/>
+            <NavBar handleResumeClick={handleResumeClick}/>
             <Body showResume={showResume}/>
         </div>
     );

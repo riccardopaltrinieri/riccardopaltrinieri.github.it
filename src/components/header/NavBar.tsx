@@ -5,10 +5,10 @@ import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
  * @author Riccardo Paltrinieri <riccardo@paltrinieri>
  * @since 20220606 Initial creation.
  */
-class Header extends Component<HeaderProps> {
+class NavBar extends Component<NavBarProps> {
     setShouldShowResume: (shouldShowResume: boolean) => void;
 
-    constructor(props: HeaderProps) {
+    constructor(props: NavBarProps) {
         super(props);
 
         this.setShouldShowResume = props.handleResumeClick;
@@ -26,7 +26,7 @@ class Header extends Component<HeaderProps> {
                         Portfolio
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav" role="">
+                    <Navbar.Collapse id="basic-navbar-nav" role="tablist">
                         <Nav className="me-auto">
                             <NavDropdown title="About" id="basic-nav-dropdown" menuVariant="dark" className="navbar-dropdown">
                                 <NavDropdown.Item href="#work">Work</NavDropdown.Item>
@@ -43,10 +43,11 @@ class Header extends Component<HeaderProps> {
                             </Nav.Link>
                             <Nav.Link href="#contact">Contact</Nav.Link>
                         </Nav>
-                        <Nav>
-                            <Nav.Link href="#deets">More deets</Nav.Link>
-                            <Nav.Link href="#memes">Dank memes</Nav.Link>
-                        </Nav>
+                        {/*<Nav>*/}
+                        {/*    <Nav.Link href="#deets">More deets</Nav.Link>*/}
+                        {/*    <Nav.Item>Dank</Nav.Item>*/}
+                        {/*    <Form.Check type="switch" id="custom-switch"/>*/}
+                        {/*</Nav>*/}
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
@@ -54,8 +55,8 @@ class Header extends Component<HeaderProps> {
     }
 }
 
-interface HeaderProps {
+interface NavBarProps {
     handleResumeClick: (shouldShowResume: boolean) => void
 }
 
-export {Header};
+export {NavBar};
