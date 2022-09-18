@@ -4,6 +4,7 @@ import {
     Intro,
     Resume,
     Work,
+    Coupon
 } from 'components';
 import {
     BrowserRouter as Router,
@@ -22,6 +23,7 @@ export default function App() {
                     <Route path="/work" element={<Work />} />
                     <Route path="/resume" element={<Resume />} />
                     {/*<Route path="/contact" element={<Contact />} />*/}
+                    <Route path="/easter-egg" element={<Coupon />} />
                     <Route path="*" element={<Navigate to="/home"/>} />
                 </Routes>
             </div>
