@@ -6,19 +6,11 @@ import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
  * @since 20220606 Initial creation.
  */
 class NavBar extends Component<NavBarProps> {
-    setShouldShowResume: (shouldShowResume: boolean) => void;
-
-    constructor(props: NavBarProps) {
-        super(props);
-
-        this.setShouldShowResume = props.handleResumeClick;
-    }
-
     render() {
         return <div className="nav-bar">
             <Navbar bg="black" variant="dark" expand="lg" className="py-2 fs-5">
                 <Container>
-                    <Navbar.Brand href="home" className="fs-3">Portfolio</Navbar.Brand>
+                    <Navbar.Brand href="/" className="fs-3">Portfolio</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" role="tablist">
                         <Nav className="me-auto">
@@ -32,11 +24,6 @@ class NavBar extends Component<NavBarProps> {
                             <Nav.Link href="resume">Resume</Nav.Link>
                             <Nav.Link href="contact">Contact</Nav.Link>
                         </Nav>
-                        {/*<Nav>*/}
-                        {/*    <Nav.Link href="#deets">More deets</Nav.Link>*/}
-                        {/*    <Nav.Item>Dank</Nav.Item>*/}
-                        {/*    <Form.Check type="switch" id="custom-switch"/>*/}
-                        {/*</Nav>*/}
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
