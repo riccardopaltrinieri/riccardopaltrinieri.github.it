@@ -11,7 +11,10 @@ import './index.css';
 class Resume extends Component {
     render() {
         return (
-            <Container className="pt-3 container_resume">
+            <Container fluid className="resume-section">
+                <Row className="my-3">
+                    <a href={"/pdf/cv_riccardo_paltrinieri.pdf"}><Button variant="outline-light">Download</Button></a>
+                </Row>
                 <Row className="align-items-center">
                     <Col>
                         <Document
@@ -27,11 +30,11 @@ class Resume extends Component {
                             <h3> "One of the best developer I've ever met"</h3>
                             <h5>~ Tony Stark</h5>
                         </Row>
-                        <Row className="fst-italic py-5">
+                        <Row className="fst-italic pt-5">
                             <h3> "Brilliant, skilled and fun"</h3>
                             <h5>~ Rick Sanchez</h5>
                         </Row>
-                        <Row className="mt-5">
+                        <Row className="mt-3">
                             <a href={"/pdf/cv_riccardo_paltrinieri.pdf"}><Button variant="outline-light">Download</Button></a>
                         </Row>
                     </Col>

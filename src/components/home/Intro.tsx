@@ -1,8 +1,9 @@
 import {Component} from "react";
 import {Col, Container, Image, Row} from "react-bootstrap";
-import intro_picture from "images/avatar_intro.jpg";
+import intro_picture from "images/avatar_intro.png";
 import './index.css';
-import work_list_picture from "../../../images/company_logos.png";
+import work_list_picture from "../../images/company_logos.png";
+import {IntroCaption} from "./IntroCaption";
 
 /**
  * @author Riccardo Paltrinieri <riccardo@paltrinieri>
@@ -24,12 +25,9 @@ class Intro extends Component {
                     <Col className="align-items-end p-4">
                         <Image src={intro_picture} alt="Intro picture" className="intro-picture"/>
                     </Col>
-                    <Col className="text-start p-5 intro-text">
-                        <h1 style={{ color: "white" }}><b>Riccardo Paltrinieri</b></h1>
-                        <p style={{ color: "white" }}><i>
-                            I'm an Amsterdam based software engineer, with experience in web-app development,
-                            from the backend to the frontend.
-                        </i></p>
+                    <Col className="text-start p-5 intro-text text-white">
+                        <h1><b>Riccardo Paltrinieri</b></h1>
+                        <IntroCaption />
                     </Col>
                 </Row>
                 <Row>
