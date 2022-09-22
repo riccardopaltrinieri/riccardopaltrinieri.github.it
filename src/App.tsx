@@ -7,7 +7,7 @@ import {
     Coupon
 } from 'components';
 import {
-    BrowserRouter as Router,
+    BrowserRouter,
     Route,
     Routes,
     Navigate
@@ -15,9 +15,9 @@ import {
 
 export default function App() {
     return (
-        <Router>
+        <BrowserRouter>
+            <NavBar />
             <div className="App">
-                <NavBar />
                 <Routes>
                     <Route path="/" element={<Intro />} />
                     <Route path="/work" element={<Work />} />
@@ -26,6 +26,6 @@ export default function App() {
                     <Route path="*" element={<Navigate to="/"/>} />
                 </Routes>
             </div>
-        </Router>
+        </BrowserRouter>
     );
 }
