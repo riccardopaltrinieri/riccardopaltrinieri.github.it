@@ -4,24 +4,24 @@ import Typewriter from "typewriter-effect";
 class IntroCaption extends Component {
     render() {
         return <Typewriter
-            options={{delay: 20, loop: true}}
+            options={{delay: 20}}
             onInit={(typewriter) => {
                 typewriter.typeString('Hi there! Welcome to my portfolio website!')
                     .pauseFor(1500)
                     .deleteAll()
                     .typeString('I\'m an Amsterdam based software engineer with experience in web-app development, ' +
                         'from the backend to the frontend.')
-                    .pauseFor(2500)
-                    .deleteAll(20)
-                    .typeString('Please, feel free to have a look around and to contact me :)')
+                    .pauseFor(3500)
+                    .deleteAll(15)
+                    .typeString('Please, make yourself at home, have a look around and feel free to contact me :)')
                     .pauseFor(4500)
-                    .deleteAll()
+                    .deleteAll(70)
                     .pauseFor(2500)
                     .typeString('Ahem..')
                     .pauseFor(1500)
                     .deleteAll(500)
                     .pauseFor(3500)
-                    .typeString('This is getting awkward.')
+                    .typeString('This is getting awkward..')
                     .pauseFor(2500)
                     .deleteAll()
                     .pauseFor(1500)
@@ -34,10 +34,10 @@ class IntroCaption extends Component {
                     .typeString('Well..')
                     .pauseFor(2500)
                     .deleteAll()
-                    .typeString('Why don\'t you try writing "easter-egg" in the url bar and leave me alone?')
+                    .typeString("Here's your <a href=\"/easter-egg\">Egg</a>, now open it, be quick!.")
                     .pauseFor(2500)
                     .deleteAll()
-                    .pauseFor(4500)
+                    .typeString('Hi there! Welcome to my portfolio website!')
                     .start();
             }}
         />;
