@@ -1,21 +1,37 @@
 import { Component } from "react";
 import {Timeline} from "@mui/lab";
 import {Experience} from "./Experience";
-import {EnumCompanyName} from "components/common";
+import './index.css';
+import events from "./events.json";
+import {Col, Row} from "react-bootstrap";
 
 /**
  * @author Riccardo Paltrinieri <riccardo@paltrinieri>
  * @since 20220607 Initial creation.
  */
-class Work extends Component {
+class Work extends Component
+{
+    getPosition() {
+        return window.innerWidth < 990 ? "right" : "alternate";
+    }
+
+    getColumn() {
+        return window.innerWidth < 990 ? <Col className="col-6"/> : null;
+    }
+
     render() {
-        return <div className="work my-5">
-            <Timeline position="alternate" className="mt-5 pt-5">
-                <Experience companyName={EnumCompanyName.BUNQ}/>
-                <Experience companyName={EnumCompanyName.POLITECNICO}/>
-                <Experience companyName={EnumCompanyName.SICOM} isEndOfTimeline={true}/>
-            </Timeline>;
-        </div>;
+        return <Row className="work">
+            <hr className="bg-white mt-5"/>
+            <h2 className="text-white mt-5">My journey:</h2>
+            <Col>
+                <Timeline position={this.getPosition()} className="pt-5">
+                    {events.map((event) => {
+                        return <Experience event={event}/>
+                    })}
+                </Timeline>
+            </Col>
+            {this.getColumn()}
+        </Row>;
     }
 }
 

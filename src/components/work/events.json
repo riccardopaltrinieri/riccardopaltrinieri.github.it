@@ -1,0 +1,55 @@
+[
+    {
+        "title": "Bunq",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Bunq_%28bank%29_company_logo_2017.svg/1200px-Bunq_%28bank%29_company_logo_2017.svg.png",
+        "website": "https://www.bunq.com/",
+        "role": "Backend Developer",
+        "location": "Amsterdam (NL)",
+        "date": ["2021", "current"],
+        "description": [
+            "Implementation of multiple features from scratch to ensure continuous growth of the product.",
+            "Maintainance of a high-quality code through methodic reviews and frequent refactors.",
+            "Works with various teams to dene, implement, test and release every product.",
+            "Constant monitoring, ownership, and implementation of solutions for high-impact issues."
+        ],
+        "end": false
+    },
+    {
+        "title": "Politecnico Di Milano",
+        "website": "https://www.polimi.it/",
+        "logo": "https://upload.wikimedia.org/wikipedia/it/archive/b/be/20151105101950%21Logo_Politecnico_Milano.png",
+        "role": "Bachelor - Engineering of Computing Systems",
+        "location": "Milan (IT)",
+        "date": ["2017", "2020"],
+        "description": [
+            "Mathematical analysis, geometry, algebra and logic",
+            "Physics and chemistry",
+            "Statistics and calculation of probability",
+            "Technical and mechanical physics",
+            "Economics and business organization",
+            "Electronic and automatic",
+            "Algorithms and principles of computer science",
+            "Computer architecture and operating systems",
+            "Databases",
+            "Software engineering",
+            "Artificial Intelligence and Robotics",
+            "Logic networks",
+            "Information systems",
+            "Internet and communication networks",
+            "Communication technologies and systems"
+        ],
+        "end": false
+    },
+    {
+        "title": "ISIT Bassi Burgatti",
+        "logo": "https://content.tourmake.it/tour/tour-9031/settings/imgmenu.jpg",
+        "website": "https://www.isit100.fe.it/",
+        "role": "Scientific High School of applied sciences",
+        "location": "Cento (IT)",
+        "date": ["2012", "2017"],
+        "description": [
+            "The path of the scientific high school of applied sciences promotes the achievement of particularly advanced skills in studies related to scientific-technological culture, with specific reference to the mathematical, physical, chemical and biological sciences, to computer science and its applications."
+        ],
+        "end": true
+    }
+]

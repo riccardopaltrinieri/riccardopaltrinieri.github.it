@@ -1,5 +1,5 @@
 @media screen and (max-width: 800px) {
-    .navbar-dropdown {
+    .navbar-collapse {
         text-align: center !important;
     }
 }

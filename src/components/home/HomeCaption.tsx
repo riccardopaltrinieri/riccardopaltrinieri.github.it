@@ -1,7 +1,7 @@
 import {Component} from "react";
 import Typewriter from "typewriter-effect";
 
-class IntroCaption extends Component {
+class HomeCaption extends Component {
     render() {
         return <Typewriter
             options={{delay: 20}}
@@ -44,4 +44,4 @@ class IntroCaption extends Component {
     }
 }
 
-export {IntroCaption}
+export {HomeCaption}

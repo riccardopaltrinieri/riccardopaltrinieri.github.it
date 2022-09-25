@@ -1,33 +1,57 @@
 import {Component} from "react";
-import {TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator} from "@mui/lab";
+import {TimelineConnector, TimelineContent, TimelineItem, TimelineOppositeContent, TimelineSeparator} from "@mui/lab";
+import {Accordion, Col, Image, Row} from "react-bootstrap";
+import './index.css';
 
 /**
  * @author Riccardo Paltrinieri <riccardo@paltrinieri>
  * @since 20220615 Initial creation.
  */
 class Experience extends Component<ExperienceProps> {
-    constructor(props: ExperienceProps) {
-        super(props);
-
-        this.state = {value: ''};
-    }
-
     render() {
-        let connector = this.props.isEndOfTimeline ? null : <TimelineConnector/>;
+        let event = this.props.event;
+        let connector = event.end ? null : <TimelineConnector/>;
 
         return <TimelineItem>
+            <TimelineOppositeContent>
+                <p className="text-secondary">{event.date[0]} - {event.date[1]}</p>
+                <p className="text-secondary">{event.location}</p>
+            </TimelineOppositeContent>
             <TimelineSeparator>
-                <TimelineDot/>
+                <a href={event.website}><Image src={event.logo} style={{ maxWidth: 50}}/></a>
                 {connector}
             </TimelineSeparator>
-            <TimelineContent className="text-white"><h4>{this.props.companyName}</h4></TimelineContent>
+            <TimelineContent className="text-white mb-5" style={{marginTop: -25}}>
+                <Accordion flush>
+                    <Accordion.Header>
+                        <Row>
+                            <Col>
+                                <h3>{event.title}</h3><h5>{event.role}</h5>
+                            </Col>
+                        </Row>
+                    </Accordion.Header>
+                    <Accordion.Body>
+                        <ul className="list-unstyled">
+                            {event.description.map((item) => {return <li>{item}</li>})}
+                        </ul>
+                    </Accordion.Body>
+                </Accordion>
+            </TimelineContent>
         </TimelineItem>
     }
 }
 
 interface ExperienceProps {
-    companyName: string
-    isEndOfTimeline?: boolean
+    event: {
+        title: string,
+        logo: string,
+        website: string,
+        role: string,
+        location: string,
+        date: string[],
+        description: string[],
+        end: boolean,
+    }
 }
 
 export {Experience};

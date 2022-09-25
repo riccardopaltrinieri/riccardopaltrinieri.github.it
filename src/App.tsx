@@ -1,9 +1,8 @@
 import 'App.css';
 import {
     NavBar,
-    Intro,
+    Home,
     Resume,
-    Work,
     Coupon
 } from 'components';
 import {
@@ -19,8 +18,9 @@ export default function App() {
             <NavBar />
             <div className="App">
                 <Routes>
-                    <Route path="/" element={<Intro />} />
-                    <Route path="/work" element={<Work />} />
+                    <Route path="/" element={<Home />} />
+                    {/*<Route path="/about" element={<About />} />*/}
+                    <Route path="/projects" element={<Home />} />
                     <Route path="/resume" element={<Resume />} />
                     <Route path="/easter-egg" element={<Coupon />} />
                     <Route path="*" element={<Navigate to="/"/>} />
