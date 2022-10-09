@@ -1,0 +1,80 @@
+[
+    {
+        "title": "Portfolio",
+        "logo": "/img/portfolio.png",
+        "websites": ["https://riccardo.paltrieri.it/"],
+        "date": "2022",
+        "description": [
+            "Personal portfolio website built with React and hosted using GitHub Pages."
+        ],
+        "languages": "JS",
+        "frameworks": "React"
+    },
+    {
+        "title": "Santorini",
+        "logo": "/img/santorini.png",
+        "websites": ["https://github.com/riccardopaltrinieri/Santorini-desktop-game"],
+        "date": "2020",
+        "description": [
+            "Server-client implementation of the table game \"Santorini\" from CranioCreations SNC"
+        ],
+        "languages": "Java"
+    },
+    {
+        "title": "rickVideo",
+        "logo": "/img/rickVideo.png",
+        "websites": ["https://github.com/riccardopaltrinieri/rickVideo"],
+        "date": "2020",
+        "description": [
+            "Youtube-like video sharing website."
+        ],
+        "languages": "Java, JS",
+        "frameworks": "Spring, React"
+    },
+    {
+        "title": "Social-network-data-management",
+        "logo": "/img/api.png",
+        "websites": ["https://github.com/riccardopaltrinieri/Social-network-data-management"],
+        "date": "2021",
+        "description": [
+            "Data structure to store entities and relationships between them, built with time and memory constraints"
+        ],
+        "languages": "Java, JS",
+        "frameworks": "Spring, React"
+    },
+    {
+        "title": "iniscrapec",
+        "logo": "/img/inipec.png",
+        "websites": ["https://github.com/riccardopaltrinieri/iniscrapec"],
+        "date": "2021",
+        "description": [
+            "Web scraper for the website \"inipec.gov.it\" that from an Italian VAT code returns the PEC (certified email address) of a company."
+        ],
+        "languages": "python"
+    },
+    {
+        "title": "Working-Zone Encoding",
+        "logo": "/img/wze.jpeg",
+        "websites": ["https://github.com/riccardopaltrinieri/Working-Zone-Encoding"],
+        "date": "2020",
+        "description": [
+            "Hardware component designed to implements the Working Zone Encoding (WZE) which reduces the energy used in microprocessor address buses."
+        ],
+        "languages": "VHDL"
+    },
+    {
+        "title": "Jnk",
+        "logo": "/img/jnk.png",
+        "websites": ["https://github.com/riccardopaltrinieri/JNK-WebApp"],
+        "date": "2020",
+        "description": [
+            "Web application for the validation of aerial images of locations at risk for the presence of illegal landfills, with a crowdsourcing approach."
+        ],
+        "languages": "python"
+    },
+    {
+        "title": "More..",
+        "logo": "/img/github.png",
+        "websites": ["https://github.com/riccardopaltrinieri"]
+    }
+]

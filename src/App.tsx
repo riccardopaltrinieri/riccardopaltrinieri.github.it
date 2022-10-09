@@ -1,9 +1,10 @@
 import 'App.css';
 import {
-    NavBar,
+    Coupon,
     Home,
-    Resume,
-    Coupon
+    NavBar,
+    ProjectBoard,
+    Resume
 } from 'components';
 import {
     BrowserRouter,
@@ -20,7 +21,7 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     {/*<Route path="/about" element={<About />} />*/}
-                    <Route path="/projects" element={<Home />} />
+                    <Route path="/projects" element={<ProjectBoard />} />
                     <Route path="/resume" element={<Resume />} />
                     <Route path="/easter-egg" element={<Coupon />} />
                     <Route path="*" element={<Navigate to="/"/>} />
