@@ -1,7 +1,7 @@
 /*!
-  Copyright (c) 2018 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
+	Copyright (c) 2018 Jed Watson.
+	Licensed under the MIT License (MIT), see
+	http://jedwatson.github.io/classnames
 */
 
 /**
@@ -67,7 +67,7 @@
  */
 
 /**
- * @remix-run/router v1.0.0
+ * @remix-run/router v1.0.1
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -78,7 +78,7 @@
  */
 
 /**
- * React Router DOM v6.4.0
+ * React Router DOM v6.4.1
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -89,7 +89,7 @@
  */
 
 /**
- * React Router v6.4.0
+ * React Router v6.4.1
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -99,7 +99,7 @@
  * @license MIT
  */
 
-/** @license MUI v5.8.0
+/** @license MUI v5.10.6
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
