@@ -1,5 +1,6 @@
 import 'App.css';
 import {
+    About,
     Coupon,
     Home,
     NavBar,
@@ -20,7 +21,7 @@ export default function App() {
             <div className="App">
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    {/*<Route path="/about" element={<About />} />*/}
+                    <Route path="/about" element={<About />} />
                     <Route path="/projects" element={<ProjectBoard />} />
                     <Route path="/resume" element={<Resume />} />
                     <Route path="/easter-egg" element={<Coupon />} />

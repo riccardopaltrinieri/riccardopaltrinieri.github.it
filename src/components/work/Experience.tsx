@@ -32,7 +32,7 @@ class Experience extends Component<ExperienceProps> {
                     </Accordion.Header>
                     <Accordion.Body>
                         <ul className="list-unstyled">
-                            {event.description.map((item) => {return <li>{item}</li>})}
+                            {event.description.map((item) => {return <li key={item}>{item}</li>})}
                         </ul>
                     </Accordion.Body>
                 </Accordion>

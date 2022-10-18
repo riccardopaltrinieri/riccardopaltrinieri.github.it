@@ -3,7 +3,7 @@ import {Col, Container, Image, Row} from "react-bootstrap";
 import intro_picture from "images/avatar_intro.png";
 import './index.css';
 import {HomeCaption} from "./HomeCaption";
-import {Work} from "components";
+import {Work, About} from "components";
 
 /**
  * @author Riccardo Paltrinieri <riccardo@paltrinieri>
@@ -22,7 +22,6 @@ class Home extends Component {
                         <HomeCaption />
                     </Col>
                 </Row>
-                <Work/>
             </Container>
         </div>;
     }

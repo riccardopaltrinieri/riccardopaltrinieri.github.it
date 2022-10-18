@@ -2,7 +2,7 @@
     {
         "title": "Portfolio",
         "logo": "/img/portfolio.png",
-        "websites": ["https://riccardo.paltrieri.it/"],
+        "websites": ["https://riccardo.paltrinieri.it/", "https://github.com/riccardopaltrinieri/riccardopaltrinieri.github.io"],
         "date": "2022",
         "description": [
             "Personal portfolio website built with React and hosted using GitHub Pages."

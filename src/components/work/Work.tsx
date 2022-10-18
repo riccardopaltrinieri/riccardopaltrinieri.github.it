@@ -12,25 +12,19 @@ import {Col, Row} from "react-bootstrap";
 class Work extends Component
 {
     getPosition() {
-        return window.innerWidth < 990 ? "right" : "alternate";
-    }
-
-    getColumn() {
-        return window.innerWidth < 990 ? <Col className="col-6"/> : null;
+        return window.innerWidth < 800 ? "right" : "alternate";
     }
 
     render() {
-        return <Row className="work">
-            <hr className="bg-white mt-5"/>
-            <h2 className="text-white mt-5">My journey:</h2>
-            <Col>
-                <Timeline position={this.getPosition()} className="pt-5">
+        return <Row className="work text-white mt-5">
+            <h1 className="my-5">My journey</h1>
+            <Col className="pt-5">
+                <Timeline position={this.getPosition()}>
                     {events.map((event) => {
-                        return <Experience event={event}/>
+                        return <Experience event={event} key={event.title}/>
                     })}
                 </Timeline>
             </Col>
-            {this.getColumn()}
         </Row>;
     }
 }

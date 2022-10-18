@@ -1,3 +1,4 @@
+export * from "./about/About";
 export * from "./coupon/Coupon";
 export * from "./home/Home";
 export * from "./header/NavBar";
