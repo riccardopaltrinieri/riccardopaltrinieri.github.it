@@ -13,7 +13,16 @@ class Resume extends Component {
         return (
             <Container fluid className="resume-section">
                 <Row className="align-items-center">
-                    <Col className="text-center text-white resume-quote">
+                    <Col>
+                        <Document
+                            file="/pdf/cv_riccardo_paltrinieri.pdf"
+                            alt="CV Riccardo Paltrinieri"
+                            error={Resume.getPdfError()}
+                        >
+                            <Page pageNumber={1}/>
+                        </Document>
+                    </Col>
+                    <Col className="text-center text-white resume-quote my-5">
                         <Row className="fst-italic">
                             <h3> "One of the best developer I've ever met"</h3>
                             <h5>~ Tony Stark</h5>
@@ -25,15 +34,6 @@ class Resume extends Component {
                         <Row className="mt-3">
                             <a href={"/pdf/cv_riccardo_paltrinieri.pdf"}><Button variant="outline-light">Download</Button></a>
                         </Row>
-                    </Col>
-                    <Col>
-                        <Document
-                            file="/pdf/cv_riccardo_paltrinieri.pdf"
-                            alt="CV Riccardo Paltrinieri"
-                            error={Resume.getPdfError()}
-                        >
-                            <Page pageNumber={1}/>
-                        </Document>
                     </Col>
                 </Row>
             </Container>

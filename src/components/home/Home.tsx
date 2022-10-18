@@ -3,7 +3,6 @@ import {Col, Container, Image, Row} from "react-bootstrap";
 import intro_picture from "images/avatar_intro.png";
 import './index.css';
 import {HomeCaption} from "./HomeCaption";
-import {Work, About} from "components";
 
 /**
  * @author Riccardo Paltrinieri <riccardo@paltrinieri>
@@ -11,7 +10,7 @@ import {Work, About} from "components";
  */
 class Home extends Component {
     render() {
-        return <div className="intro-wrapper intro">
+        return <div className="intro">
             <Container className="container-xl">
                 <Row className="align-items-center">
                     <Col className="align-items-end p-4">

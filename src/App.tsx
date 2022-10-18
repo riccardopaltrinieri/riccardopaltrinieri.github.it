@@ -5,7 +5,8 @@ import {
     Home,
     NavBar,
     ProjectBoard,
-    Resume
+    Resume,
+    Footer
 } from 'components';
 import {
     BrowserRouter,
@@ -28,6 +29,7 @@ export default function App() {
                     <Route path="*" element={<Navigate to="/"/>} />
                 </Routes>
             </div>
+            <Footer />
         </BrowserRouter>
     );
 }

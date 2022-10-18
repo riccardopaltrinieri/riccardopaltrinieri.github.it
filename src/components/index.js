@@ -1,5 +1,6 @@
 export * from "./about/About";
 export * from "./coupon/Coupon";
+export * from "./footer/Footer";
 export * from "./home/Home";
 export * from "./header/NavBar";
 export * from "./projects/ProjectBoard";

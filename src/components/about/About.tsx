@@ -1,5 +1,5 @@
 import {Component} from "react";
-import {Col, Container, Row} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import {Work} from "components";
 import "./index.css";
 import {AboutBody} from "./AboutBody";
