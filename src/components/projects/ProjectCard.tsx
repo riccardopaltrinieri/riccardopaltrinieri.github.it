@@ -10,7 +10,18 @@ class ProjectCard extends Component<ProjectProps>
     render() {
         let project = this.props.project;
 
-        return <Card style={{ width: '18rem' }} className="m-3 bg-dark text-white">
+        function getWebsite() {
+            return project.websites["website"] != null
+                ? <Card.Link href={project.websites["website"]}><button className="btn-dark">Website</button></Card.Link>
+                : null;
+        }
+        function getGithub() {
+            return project.websites["github"] != null
+                ? <Card.Link href={project.websites["github"]}><button className="btn-dark">Github</button></Card.Link>
+                : null;
+        }
+
+        return <Card style={{width: '18rem'}} className="m-3 bg-dark text-white">
             <Card.Img variant="top" src={project.logo} className="project-img mt-3"/>
             <Card.Body>
                 <Card.Title><h3><b>{project.title}</b></h3></Card.Title>
@@ -22,11 +33,8 @@ class ProjectCard extends Component<ProjectProps>
                 <ListGroup.Item className="bg-dark text-white">{project.frameworks}</ListGroup.Item>
             </ListGroup>
             <Card.Body>
-                {project.websites.map((link) => {
-                    return <Card.Link href={link}>
-                        <button className="btn-dark">Github</button>
-                    </Card.Link>
-                })}
+                {getWebsite()}
+                {getGithub()}
             </Card.Body>
         </Card>
     }
