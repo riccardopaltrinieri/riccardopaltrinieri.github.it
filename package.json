@@ -18,7 +18,6 @@
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
-    "react-dotenv": "^0.1.3",
     "react-icons": "^4.4.0",
     "react-pdf": "^5.7.2",
     "react-router-dom": "^6.4.0",
@@ -56,6 +55,10 @@
     ]
   },
   "react-dotenv": {
-    "whitelist": ["EMAILJS_SERVICE_ID","EMAILJS_TEMPLATE_ID","EMAILJS_PUBLIC_ID"]
+    "whitelist": [
+      "EMAILJS_SERVICE_ID",
+      "EMAILJS_TEMPLATE_ID",
+      "EMAILJS_PUBLIC_ID"
+    ]
   }
 }

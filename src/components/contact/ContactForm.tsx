@@ -36,10 +36,10 @@ class ContactForm extends Component<ContactFormState> {
         const onSubmit = (e) => {
             e.preventDefault();
             send(
-                process.env.EMAILJS_SERVICE_ID,
-                process.env.EMAILJS_TEMPLATE_ID,
+                "service_tz5kfpb",
+                "template_m1ev7fp",
                 this.state,
-                process.env.EMAILJS_PUBLIC_ID
+                "xvMzro22lLLLA1L4G",
             )
                 .then(flushFormData)
                 .catch((err) => {
