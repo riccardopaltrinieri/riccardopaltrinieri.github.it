@@ -1,7 +1,6 @@
 import {ChangeEvent, Component} from "react";
 import {Button, Col, Container, Form, Row} from "react-bootstrap";
 import {send} from "emailjs-com";
-import env from "react-dotenv";
 
 /**
  * @author Riccardo Paltrinieri <riccardo@paltrinieri.it>
