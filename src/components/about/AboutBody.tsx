@@ -9,7 +9,7 @@ class AboutBody extends Component
 {
     render() {
         return <Row>
-            <h1 className="my-5">Something about me</h1>
+            <h1 className="mt-3 mb-5">Something about me</h1>
             <p className="home-about-body">
                 I'm a highly motivated, curious, and challenge-driven <b><i>Junior Software Engineer </i></b>
                 with a strong passion for the technology world.<br/>

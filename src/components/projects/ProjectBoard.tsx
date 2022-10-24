@@ -11,7 +11,7 @@ import "./index.css";
 class ProjectBoard extends Component
 {
     render() {
-        return <Row className="p-5 justify-content-center">
+        return <Row className="p-5 justify-content-center mt-3">
             {projects.map((project) => {
                 return <ProjectCard project={project} key={project.title}/>
             })}
