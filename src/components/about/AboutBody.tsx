@@ -11,7 +11,7 @@ class AboutBody extends Component
         return <Row>
             <h1 className="mt-3 mb-5">Something about me</h1>
             <p className="home-about-body">
-                I'm a highly motivated, curious, and challenge-driven <b><i>Junior Software Engineer </i></b>
+                I'm a highly motivated, curious, and challenge-driven <b><i>Software Engineer </i></b>
                 with a strong passion for the technology world.<br/>
                 <br/>
                 Thanks to my degree in <b>Engineering of Computing System</b>, I have familiarity with any IT facet,
