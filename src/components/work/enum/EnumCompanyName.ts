@@ -3,5 +3,3 @@ enum EnumCompanyName {
     POLITECNICO = "politecnico",
     SICOM = "sicom",
 }
-
-export { EnumCompanyName };

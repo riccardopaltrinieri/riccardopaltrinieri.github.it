@@ -1,6 +1,13 @@
 import 'App.css';
-import {About, Coupon, ContactForm, Home, NavBar, ProjectBoard, Resume, Footer} from 'components';
 import {BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
+import { NavBar } from './components/header/NavBar';
+import { Home } from './components/home/Home';
+import { About } from './components/about/About';
+import { ProjectBoard } from './components/projects/ProjectBoard';
+import { Resume } from './components/resume/Resume';
+import { ContactForm } from './components/contact/ContactForm';
+import { Coupon } from './components/coupon/Coupon';
+import { Footer } from './components/footer/Footer';
 
 export default function App() {
     return (
