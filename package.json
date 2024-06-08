@@ -60,5 +60,8 @@
       "EMAILJS_TEMPLATE_ID",
       "EMAILJS_PUBLIC_ID"
     ]
+  },
+  "devDependencies": {
+    "@types/react-pdf": "^7.0.0"
   }
 }
