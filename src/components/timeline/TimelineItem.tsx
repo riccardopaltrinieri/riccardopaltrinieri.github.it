@@ -1,5 +1,6 @@
 import { Accordion, Col, Image, Row } from 'react-bootstrap';
 import { TimelineEvent } from './Timeline';
+import { isMobile } from 'react-device-detect';
 
 type TimelineItemProps = {
     event: TimelineEvent;
@@ -117,7 +118,6 @@ const TimelineItemDesktop = ({isEven, event, isLast}: {
 export const TimelineItem = ({event, index, totalEvents}: TimelineItemProps) => {
     const isEven = index % 2 === 0;
     const isLast = index + 1 === totalEvents
-    const isMobile = window.innerWidth < 800;
 
     return isMobile
         ? <TimelineItemMobile event={event} isEven={isEven} />
