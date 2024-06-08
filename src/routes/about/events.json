@@ -9,8 +9,7 @@
         "description": [
             "Creating new platforms and tools while also improving existing ones within a B2B customer-centric and agile environment.",
             "Through technologies like Typescript, MongoDB, React and python for the data extraction we ensure the maximum satisfaction of customer needs while providing the best quality of our products."
-        ],
-        "end": false
+        ]
     },
     {
         "title": "Bunq",
@@ -21,11 +20,10 @@
         "date": ["Jan 2021", "Dec 2023"],
         "description": [
             "Implementation of multiple features from scratch to ensure continuous growth of the product.",
-            "Maintainance of a high-quality code through methodic reviews and frequent refactors.",
-            "Works with various teams to dene, implement, test and release every product.",
+            "Maintenance of a high-quality code through methodic reviews and frequent refactors.",
+            "Involvement in all phases of the development life-cycle including requirements analysis, software design, software implementation, testing, deployment.",
             "Constant monitoring, ownership, and implementation of solutions for high-impact issues."
-        ],
-        "end": false
+        ]
     },
     {
         "title": "Politecnico Di Milano",
@@ -35,23 +33,21 @@
         "location": "Milan (IT)",
         "date": ["Sep 2017", "Sep 2020"],
         "description": [
-            "Mathematical analysis, geometry, algebra and logic",
-            "Physics and chemistry",
-            "Statistics and calculation of probability",
-            "Technical and mechanical physics",
-            "Economics and business organization",
-            "Electronic and automatic",
-            "Algorithms and principles of computer science",
             "Computer architecture and operating systems",
-            "Databases",
-            "Software engineering",
-            "Artificial Intelligence and Robotics",
-            "Logic networks",
-            "Information systems",
+            "Algorithms and principles of computer science",
             "Internet and communication networks",
-            "Communication technologies and systems"
-        ],
-        "end": false
+            "Communication technologies and systems",
+            "Information systems",
+            "Logic networks",
+            "Software engineering",
+            "Databases",
+            "Electronic and automatic",
+            "Economics and business organization",
+            "Technical and mechanical physics",
+            "Statistics and calculation of probability",
+            "Physics and chemistry",
+            "Mathematical analysis, geometry, algebra and logic"
+        ]
     },
     {
         "title": "ISIT Bassi Burgatti",
@@ -62,7 +58,6 @@
         "date": ["Sep 2012", "Jun 2017"],
         "description": [
             "The path of the scientific high school of applied sciences promotes the achievement of particularly advanced skills in studies related to scientific-technological culture, with specific reference to the mathematical, physical, chemical and biological sciences, to computer science and its applications."
-        ],
-        "end": true
+        ]
     }
 ]

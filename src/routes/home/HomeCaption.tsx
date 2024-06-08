@@ -7,11 +7,12 @@ export const HomeCaption = () => {
             typewriter.typeString('Hi there! Welcome to my portfolio website!')
                 .pauseFor(1500)
                 .deleteAll()
-                .typeString('I\'m an Amsterdam based software engineer with experience in web-app development, ' +
+                .typeString('I\'m a software engineer based in Barcelona with experience in web-app development, ' +
                     'from the backend to the frontend.')
                 .pauseFor(3500)
                 .deleteAll(15)
-                .typeString('Please, make yourself at home, have a look around and feel free to contact me :)')
+                .typeString('Please, have a look around by clicking on the buttons above and feel free to contact ' +
+                    'me at any time :)')
                 .pauseFor(4500)
                 .deleteAll(70)
                 .pauseFor(2500)
@@ -23,7 +24,7 @@ export const HomeCaption = () => {
                 .pauseFor(2500)
                 .deleteAll()
                 .pauseFor(1500)
-                .typeString('Why are you still reading here?')
+                .typeString('Why are you still here?')
                 .pauseFor(2500)
                 .deleteAll()
                 .typeString('You are waiting for some easter egg, aren\'t you?')
