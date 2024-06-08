@@ -1,4 +1,3 @@
-import {Timeline} from "@mui/lab";
 import './index.css';
 import events from "./events.json";
 import {Col, Row} from "react-bootstrap";

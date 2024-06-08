@@ -1,7 +1,6 @@
 import { Container } from "react-bootstrap";
 import "./index.css";
 import { AboutBody } from "./AboutBody";
-import { AboutSocial } from "./AboutSocial";
 import { Work } from '../work/Work';
 
 /**
@@ -13,7 +12,5 @@ export const About = () => {
         <AboutBody/>
         <hr className="bg-white my-5"/>
         <Work/>
-        <hr className="bg-white my-5"/>
-        <AboutSocial/>
     </Container>;
 }
