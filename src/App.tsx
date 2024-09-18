@@ -10,6 +10,7 @@ import { Coupon } from './components/coupon/Coupon';
 import { Footer } from './components/footer/Footer';
 
 export default function App() {
+    // commento di test
     return (
         <BrowserRouter>
             <NavBar />
